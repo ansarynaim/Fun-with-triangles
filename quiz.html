@@ -1,54 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz</title>
-    <link rel="stylesheet" href="quiz.css">
-</head>
-<body>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
     <nav class="navbar">
-        <ul>
-            <li> <a href="index.html"> Is Triangle </a></li>
-            <li><a href="quiz.html">Quiz</a></li>
-            <li><a href="hypotenuse.html">Hypotenuse</a></li>
-            <li><a href="area.html">Area</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html"> Is Triangle </a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="hypotenuse.html">Hypotenuse</a></li>
+        <li><a href="area.html">Area</a></li>
+      </ul>
     </nav>
     <h1>Triangle Quizz</h1>
-    <p class="heading"> For every right answer a big hug from my side 😜</p>
+    <p class="heading">For every right answer a big hug from my side 😜</p>
     <div class="container">
-        <form class="quiz-form">
-            <div class="question-conatiner">
-                <p> 1. What is the third angle for the triangle where angle1 = 45° and angle2 = 45° ?</p>
-                <label> <input type="radio" name="question" value="45°" /> 45° </label> 
-                <label> <input type="radio" name="question" value="60°" /> 60° </label> 
-                <label> <input type="radio" name="question" value="90°" /> 90° </label> 
-            </div>
-            <div class="question-conatiner">
-              <p> 2. If a triangle has an angle 90° , what is it called? </p>
-              <label> <input type="radio" name="question1" value="acute" /> acute </label> 
-              <label> <input type="radio" name="question1" value="obtuse" /> obtuse </label> 
-              <label> <input type="radio" name="question1" value="right angled" /> right angled </label> 
-          </div>
-          <div class="question-conatiner">
-              <p> 3. If a triangle has 2 sides with equal lengths and 750 angle between them. What is the type of triangle? </p>
-              <label> <input type="radio" name="question2" value="Equilateral" /> Equilateral </label> 
-              <label> <input type="radio" name="question2" value="Isosceles" /> Isosceles </label> 
-              <label> <input type="radio" name="question2" value="right angled" /> Right angled </label> 
-          </div>
-          <div class="question-conatiner">
-              <p> 4. The perimeter of an equilateral triangle is 15cm. What is the length of one side? </p>
-              <label> <input type="radio" name="question3" value="15cm" /> 15cm </label> 
-              <label> <input type="radio" name="question3" value="45cm" /> 45cm </label> 
-              <label> <input type="radio" name="question3" value="5cm" /> 5cm </label> 
-          </div>
-          </form>
-            <button id="submit-answer-btn"> Submit Answer</button>
-            <div id="output"></div>
+      <form class="quiz-form">
+        <div class="question-conatiner">
+          <p>
+            1. What is the third angle for the triangle where angle1 = 45° and
+            angle2 = 45° ?
+          </p>
+          <label>
+            <input type="radio" name="question" value="45°" /> 45°
+          </label>
+          <label>
+            <input type="radio" name="question" value="60°" /> 60°
+          </label>
+          <label>
+            <input type="radio" name="question" value="90°" /> 90°
+          </label>
+        </div>
+        <div class="question-conatiner">
+          <p>2. If a triangle has an angle 90° , what is it called?</p>
+          <label>
+            <input type="radio" name="question1" value="acute" /> acute
+          </label>
+          <label>
+            <input type="radio" name="question1" value="obtuse" /> obtuse
+          </label>
+          <label>
+            <input type="radio" name="question1" value="right angled" /> right
+            angled
+          </label>
+        </div>
+        <div class="question-conatiner">
+          <p>
+            3. If a triangle has 2 sides with equal lengths and 75 angle between
+            them. What is the type of triangle?
+          </p>
+          <label>
+            <input type="radio" name="question2" value="Equilateral" />
+            Equilateral
+          </label>
+          <label>
+            <input type="radio" name="question2" value="Isosceles" /> Isosceles
+          </label>
+          <label>
+            <input type="radio" name="question2" value="right angled" /> Right
+            angled
+          </label>
+        </div>
+        <div class="question-conatiner">
+          <p>
+            4. The perimeter of an equilateral triangle is 15cm. What is the
+            length of one side?
+          </p>
+          <label>
+            <input type="radio" name="question3" value="15cm" /> 15cm
+          </label>
+          <label>
+            <input type="radio" name="question3" value="45cm" /> 45cm
+          </label>
+          <label>
+            <input type="radio" name="question3" value="5cm" /> 5cm
+          </label>
+        </div>
+        <div class="question-conatiner">
+          <p>
+            5. What is the name of the segment that joins the midpoints of the
+            sides of a triangle?
+          </p>
+          <label>
+            <input type="radio" name="question3" value="Median" /> Median
+          </label>
+          <label>
+            <input type="radio" name="question3" value="Midsegment" />
+            Midsegment
+          </label>
+          <label>
+            <input type="radio" name="question3" value="Vertex" /> Vertex
+          </label>
+        </div>
+      </form>
+      <button id="submit-answer-btn">Submit Answer</button>
+      <div id="output"></div>
     </div>
 
     <script src="quiz.js"></script>
-</body>
+  </body>
 </html>
